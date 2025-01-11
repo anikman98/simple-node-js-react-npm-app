@@ -19,3 +19,4 @@ echo runner Jest (https://facebook.github.io/jest/).
 
 REM Run the tests
 npm test
+a
