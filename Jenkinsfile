@@ -6,6 +6,10 @@ pipeline {
                 echo "Installing dependencies..."
                 bat 'npm install' 
             }
+            steps {
+                echo "Starting tests..."
+                bat './jenkins/scripts/test.sh'
+            }
         }
     }
 }
