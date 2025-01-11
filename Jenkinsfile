@@ -6,6 +6,8 @@ pipeline {
                 echo "Installing dependencies..."
                 bat 'npm install' 
             }
+        }
+        stage('Test'){
             steps {
                 echo "Starting tests..."
                 bat './jenkins/scripts/test.sh'
